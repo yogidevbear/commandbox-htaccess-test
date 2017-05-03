@@ -1,3 +1,4 @@
 RewriteEngine On
 
-RewriteRule ^/test.cfm$ /source.cfm [NC, QSA, L]
+RewriteRule ^/test/(.*)/$ /test.cfm?$1 [NC, QSA, L]
+RewriteRule ^/(.*)/$ /$1.cfm [NC, QSA, L]
